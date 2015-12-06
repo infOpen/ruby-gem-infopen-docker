@@ -1,4 +1,5 @@
-# Tests about docker images and containers lifecycle
+##
+# This module contains tests about docker images and containers lifecycle
 
 module Infopen::Docker::Lifecycle
 
@@ -6,7 +7,16 @@ module Infopen::Docker::Lifecycle
     include Infopen::Docker::Error
 
 
-    # Remove image and its containers
+    ##
+    # Remove image and its containers.
+    #
+    # Raise an ArgumentError if bad param number
+    #
+    # Raise an Infopen::Docker::ArgumentError if param is not a
+    # Docker::Image instance
+    #
+    # Raise an Infopen::Docker::ImageError if image not exists
+
     def self.remove_image_and_its_containers(image_obj)
 
         # Check param
@@ -24,7 +34,18 @@ module Infopen::Docker::Lifecycle
     end
 
 
-    # Get all containers created with image id param
+    ##
+    # Get all containers created with image id param.
+    #
+    # It's a private module method.
+    #
+    # Raise an ArgumentError if bad param number
+    #
+    # Raise an Infopen::Docker::ArgumentError if param is not a
+    # Docker::Image instance
+    #
+    # Raise an Infopen::Docker::ImageError if image not exists
+
     def self.get_containers_from_image_id (image_id)
 
         # Check param type
