@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
                          'lib/docker/lifecycle.rb',
                          'lib/errors/errors.rb'
                        ]
-    spec.homepage    = 'http://rubygems.org/gems/infopen-docker'
+    spec.homepage    = 'https://github.com/infOpen/ruby-gem-infopen-docker'
     spec.license     = 'MIT'
 
     # Development ependencies
