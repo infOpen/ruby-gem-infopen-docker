@@ -2,8 +2,8 @@ Gem::Specification.new do |spec|
 
     # Common informations
     spec.name        = 'infopen-docker'
-    spec.version     = '0.0.0'
-    spec.date        = '2015-12-05'
+    spec.version     = '0.1.0'
+    spec.date        = '2015-12-06'
     spec.summary     = 'Docker common functions'
     spec.description = 'Used to add common functions for Dockerfile tests'
     spec.authors     = [ 'Alexandre Chaussier' ]
